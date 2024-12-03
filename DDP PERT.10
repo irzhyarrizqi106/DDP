@@ -1,0 +1,86 @@
+#Bangun Datar
+import math 
+def l_persegi(sisi):
+  hitung=sisi*sisi
+  print(f"Luas persegi adalah {hitung}")
+
+def l_persegi_panjang(p, l):
+  hitung=p*l
+  print(f"Luas persegi panjang adalah {hitung}")
+
+def l_segitiga(a, t):
+  hitung=1/2*a*t
+  print(f"Luas segitiga adalah {hitung}")
+
+def l_lingkaran(r):
+  hitung=r*3,14*r
+  print(f"Luas lingkaran adalah {hitung}")
+
+def l_jajargenjang(alas, tinggi):
+  hitung=alas*tinggi
+  print(f"Luas jajargenjang adalah {hitung}")
+
+#Bangun Ruang
+import math
+def l_kubus(s):
+  hitung=6*s**2
+  print(f"Luas kubus adalah {hitung}")
+
+def l_balok(p, l, t):
+  hitung=2*(p*l+p*t+l*t)
+  print(f"Luas balok adalah {hitung}")
+
+def l_limas_segitiga(la, ls):
+  hitung=la+ls
+  print(f"Luas limas segitiga adalah {hitung}")
+
+def l_prisma(la, ls):
+  hitung=(2*la)+ls
+  print(f"Luas prisma adalah {hitung}")
+
+def l_tabung(pi, r, t):
+  hitung=2*pi*r*(r+t)
+  print(f"Luas tabung adalah {hitung}")
+
+#Hitung
+import math
+def tambah(bil1, bil2):
+    hasil=bil1+bil2
+    print("hasil tambah dari",bil1,"+",bil2,"=",hasil)
+    
+def kali(bil1, bil2):
+    hasil=bil1*bil2
+    print("hasil kali dari",bil1,"*",bil2,"=",hasil)
+    
+def kurang(bil1, bil2):
+    hasil=bil1-bil2
+    print("hasil kurang dari",bil1,"-",bil2,"=",hasil)
+    
+def pangkat(bil1, bil2):
+    hasil = math.pow(bil1, bil2)
+    print("hasil pemangkatan dari",bil1,"^",bil2,"=",hasil)
+
+
+#call/panggil
+import hitung
+
+hitung.tambah(15, 5)
+hitung.kali(4, 10)
+hitung.kurang(2, 3)
+hitung.pangkat(100, 2)
+
+import bangundatar
+
+bangundatar.l_persegi(4)
+bangundatar.l_persegi_panjang(3, 6)
+bangundatar.l_segitiga(3, 6)
+bangundatar.l_lingkaran(2)
+bangundatar.l_jajargenjang(4, 9)
+
+import bangunruang
+
+bangunruang.l_kubus(4)
+bangunruang.l_balok(3, 5, 3)
+bangunruang.l_limas_segitiga(9, 10)
+bangunruang.l_prisma(11, 22)
+bangunruang.l_tabung(22/7, 5, 23)
